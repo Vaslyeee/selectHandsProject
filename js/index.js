@@ -96,7 +96,6 @@ const pageHedaerText = {
 // Переменная всей старницы
 const page = document.querySelector(".page");
 
-// Собираем переменные
 const headerButton = page.querySelector(".header__button-hand");
 const headerFirstText = page.querySelector(".header__first-text");
 const headerSecondText = page.querySelector(".header__second-text");
@@ -215,7 +214,7 @@ function selectHand(event) {
   return null;
 }
 
-let currentPotionSrc = null; // Хранит текущий src выбранной картинки
+let currentPotionSrc = null;
 
 document.addEventListener("DOMContentLoaded", function () {
   const hands = document.querySelectorAll(".button-image"); // Все изображения рук
@@ -321,7 +320,6 @@ function selectPotion(event) {
   }
 }
 
-// Для отладки
 function clickTry(event) {
   console.log(event.target);
 }
@@ -342,7 +340,6 @@ function selectHand(event) {
   return null;
 }
 
-// Получаем все элементы с классом "lizard__element"
 const lizardElements = document.querySelectorAll(".lizard__element");
 
 // Функция для обработки наведения на элемент
@@ -350,27 +347,22 @@ function handleMouseEnter(event) {
   const element = event.currentTarget;
   const image = element.querySelector(".lizard__image");
 
-  // При наведении элемент будет двигаться в случайном направлении
-  // Учитываем, что элементы могут выходить за пределы родительского контейнера
-  const randomX = Math.random() * 200 - 100; // Случайное смещение по оси X (от -100px до 100px)
-  const randomY = Math.random() * 200 - 100; // Случайное смещение по оси Y (от -100px до 100px)
+  const randomX = Math.random() * 200 - 100;
+  const randomY = Math.random() * 200 - 100;
 
-  image.style.transition = "transform 0.2s ease"; // Плавный переход
-  image.style.transform = `translate(${randomX}px, ${randomY}px)`; // Применяем трансформацию
+  image.style.transition = "transform 0.2s ease";
+  image.style.transform = `translate(${randomX}px, ${randomY}px)`;
 }
 
-// Функция для обработки движения мыши (при уходе мыши из элемента)
 function handleMouseLeave(event) {
   const element = event.currentTarget;
   const image = element.querySelector(".lizard__image");
 
-  // Возвращаем изображение в исходное положение
-  image.style.transition = "transform 0.2s ease"; // Плавный переход
+  image.style.transition = "transform 0.2s ease";
   image.style.transform = "translate(0, 0)";
 }
 
-// Назначаем обработчики событий для каждого элемента
 lizardElements.forEach((element) => {
-  element.addEventListener("mouseenter", handleMouseEnter); // Наведение на элемент
-  element.addEventListener("mouseleave", handleMouseLeave); // Уход мыши с элемента
+  element.addEventListener("mouseenter", handleMouseEnter);
+  element.addEventListener("mouseleave", handleMouseLeave);
 });
