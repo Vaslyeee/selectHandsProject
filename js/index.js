@@ -291,19 +291,19 @@ function selectPotion(event) {
   if (perColor === "potionBlue") {
     console.log("potionBlue");
     backgoundPotion.style.backgroundImage =
-      "url('../img/backgroundFlasks/BackgroundBlue.png')";
+      "url('./img/backgroundFlasks/BackgroundBlue.png')";
   } else if (perColor === "potionPink") {
     console.log("potionPink");
     backgoundPotion.style.backgroundImage =
-      "url('../img/backgroundFlasks/BackgroundPink.png')";
+      "url('./img/backgroundFlasks/BackgroundPink.png')";
   } else if (perColor === "potionGreen") {
     console.log("potionGreen");
     backgoundPotion.style.backgroundImage =
-      "url('../img/backgroundFlasks/BackgroundGreen.png')";
+      "url('./img/backgroundFlasks/BackgroundGreen.png')";
   } else if (perColor === "potionRed") {
     console.log("potionRed");
     backgoundPotion.style.backgroundImage =
-      "url('../img/backgroundFlasks/BackgroundRad.png')";
+      "url('./img/backgroundFlasks/BackgroundRad.png')";
   }
 
   if (clickedSrc === currentPotionSrc) {
@@ -312,7 +312,7 @@ function selectPotion(event) {
     selectedPotionImage.alt = "";
     currentPotionSrc = null;
     backgoundPotion.style.backgroundImage =
-      "url('../img/backgroundMainThree.png')";
+      "url('./img/backgroundMainThree.png')";
   } else {
     // Новый выбор
     selectedPotionImage.src = clickedSrc;
