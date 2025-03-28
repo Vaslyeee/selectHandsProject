@@ -1,0 +1,359 @@
+.page {
+  background: #000;
+}
+
+.page__content {
+  max-width: 1760px;
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
+  margin: auto;
+}
+
+/* СЕКЦИЯ HEADER */
+
+.header {
+  margin-top: 5%;
+  width: 95%;
+  margin-left: 2%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  background: url("../img/backgroundHeader.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.header__container-first__section {
+  padding: 35% 0 0 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 28vw;
+}
+
+.header__container-third__section {
+  padding: 35% 0 0 40%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header__text {
+  color: rgb(255 255 255);
+  font-family: "EuropeExtendedC", sans-serif;
+  font-weight: 400;
+  font-size: 1.1vw;
+}
+
+.header__container-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__button-hand {
+  position: relative;
+  padding-top: 56.25%;
+  width: 100%;
+}
+
+.header__button-hand-image {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 90%;
+  height: auto;
+  max-width: 100%;
+  margin-top: 10%;
+  margin-left: 5%;
+}
+
+.header__button__text {
+  font-family: "EuropeExtendedC", sans-serif;
+  color: rgb(106 216 65);
+  font-size: 1.2vw;
+  font-weight: 700;
+  padding-top: 56%;
+  padding-bottom: 8%;
+}
+
+.header__button__text-alter {
+  user-select: none;
+  opacity: 0%;
+}
+
+/* СЕКЦИЯ MAIN */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 5vw;
+}
+
+.content__section-text {
+  font-family: "EuropeExtendedC", sans-serif;
+  color: rgb(106 216 65);
+  font-size: 1.1vw;
+  font-weight: 400;
+  letter-spacing: 0%;
+  margin: 2.5% 0 0 4%;
+}
+
+/* руки */
+.section__make-choice {
+  background: url("../img/backgroundMainOne.png") no-repeat center center;
+  background-size: 95%;
+  height: 45vw;
+  width: 100%;
+  position: relative;
+}
+
+.content__hands {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  width: 85%;
+  margin-left: 5%;
+}
+
+.button-hands {
+  position: relative;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20%;
+}
+
+.button-image {
+  position: relative;
+  max-width: 76%;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.Background_Hands {
+  position: absolute;
+  z-index: -1;
+  transform: scale(1.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.Background_Hands.visible {
+  opacity: 1;
+}
+
+.backgroundfirst {
+  margin-top: 5%;
+  margin-left: 30%;
+}
+
+.backgroundsecond {
+  margin-top: 5%;
+  margin-left: 20%;
+}
+
+.backgroundthird {
+  margin-top: 5%;
+  margin-left: -50%;
+}
+
+.button-image:hover {
+  transform: scale(1.1);
+}
+
+.button-image.selected {
+  transform: scale(1.2);
+}
+
+.button-image.deselected {
+  opacity: 0.5; /* Прозрачность 50% для остальных рук */
+}
+
+.button-image:hover {
+  transform: scale(1.1);
+}
+
+.button-image.selected {
+  transform: scale(1.2);
+}
+
+.button-image.deselected {
+  opacity: 0.5; /* Прозрачность 50% для остальных рук */
+}
+
+.button-hands-text {
+  font-family: "EuropeExtendedC", sans-serif;
+  font-size: 1.1vw;
+  font-weight: 400;
+  position: absolute;
+  white-space: nowrap;
+  opacity: 0;
+}
+
+.title__text-first {
+  color: rgba(106, 216, 65, 1);
+  margin-top: -7%;
+  margin-left: 100%;
+}
+
+.title__text-second {
+  color: rgba(65, 203, 216, 1);
+  margin-top: -15%;
+  margin-left: 90%;
+}
+
+.title__text-third {
+  color: rgba(255, 77, 77, 1);
+  margin-top: -12%;
+  margin-right: 110%;
+}
+
+.button-hands-text.visible {
+  opacity: 1;
+}
+
+.button-main-text {
+  font-family: "EuropeExtendedC", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 0.5vw;
+  font-weight: 400;
+  position: absolute;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3vw;
+  width: 40%;
+  opacity: 0;
+}
+
+.button-main-text.visible {
+  opacity: 1;
+}
+
+.text__main-first {
+  margin-top: 81%;
+  margin-left: 100%;
+}
+
+.text__main-second {
+  margin-top: 82%;
+  margin-right: 80%;
+}
+
+.text__main-third {
+  margin-top: 75%;
+  margin-right: 90%;
+}
+
+/* ящерицы */
+.section__take {
+  background: url("../img/backgroundMainTwo.png") no-repeat center center;
+  background-size: 95%;
+  height: 45vw;
+  width: 100%;
+}
+
+.content__lizards {
+  width: 90%;
+  margin-top: 4%;
+  margin-left: 6%;
+}
+
+.lizard__list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  row-gap: 11vw;
+}
+
+.lizard__element {
+  position: relative;
+  width: 100%;
+}
+
+.lizard__image {
+  position: absolute;
+  width: 100%;
+  max-width: 90%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* потки */
+.section__your-choice {
+  background: url("../img/backgroundMainThree.png") no-repeat;
+  background-size: 97%;
+  background-position: center;
+  margin-left: 2%;
+  transition: background-image 0.2s ease-in-out;
+}
+
+.content__potion {
+  display: flex;
+  gap: 35vw;
+}
+
+.selected__potion {
+  flex: 1 1 40%;
+  display: flex;
+  width: 100%;
+}
+
+.potion__list {
+  display: grid;
+  margin: 5% 2%;
+  grid-template-columns: 1fr 1fr;
+  gap: 4vw;
+  width: 97%;
+  max-width: 30%;
+}
+
+.potion__element {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+
+.selected__potion-image {
+  max-width: 70%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  margin-top: -6%;
+  margin-left: -18%;
+}
+
+/* СЕКЦИЯ FOOTER */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: url("../img/backgroundFooter.png") no-repeat center center;
+  background-size: 95%;
+  width: 100%;
+  padding: 5vw 2vw 0 0;
+  padding-bottom: 10%;
+}
+
+.footer__logo {
+  max-width: 15vw;
+  height: auto;
+  margin-left: 8vw;
+  margin-top: 5%;
+}
+
+.footer__name {
+  font-family: "EuropeExtendedC", sans-serif;
+  color: white;
+  font-size: 1.5vw;
+  font-weight: 400;
+  margin: 1vw 8vw; /* Адаптивные отступы */
+  margin-top: 5%;
+}
+
+.hideElement {
+  display: none;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
+    <title>Document</title>
+  </head>
+  <body class="page">
+    <div class="page__content">
+      <header class="header">
+        <div class="header__container header__container-first__section">
+          <p class="header__text header__first-text">
+            <span class="header__first-text-1"></span><br />
+            <span class="header__first-text-2"></span>
+          </p>
+          <p class="header__text header__second-text">
+            <span class="header__second-text-1"></span><br />
+            <span class="header__second-text-2"></span><br />
+            <span class="header__second-text-3"></span>
+          </p>
+        </div>
+        <div class="header__container header__container-button">
+          <button class="header__button-hand">
+            <img class="header__button-hand-image" src="" alt="" />
+          </button>
+          <p class="header__button__text">
+            ЧТОБЫ РАСШИФРОВАТЬ ТЕКСТ НАЖМИТЕ НА РУКУ
+          </p>
+        </div>
+        <div class="header__container header__container-first__section">
+          <p class="header__text header__third-text">
+            <span class="header__third-text-1"></span><br />
+            <span class="header__third-text-2"></span>
+          </p>
+        </div>
+      </header>
+      <main class="main">
+        <section class="content__section section__make-choice">
+          <p class="content__section-text content__firsttext">
+            Сделайте правильный выбор
+          </p>
+          <div class="content__wrapper content__hands"></div>
+        </section>
+        <section class="content__section section__take">
+          <p class="content__section-text content__section-textsecond">
+            Бери все в свои руки
+          </p>
+          <div class="content__wrapper content__lizards">
+            <ul class="lizard__list"></ul>
+          </div>
+        </section>
+        <section class="content__section section__your-choice">
+          <p class="content__section-text content__section-textthird">
+            Выбор за тобой
+          </p>
+          <div class="content__wrapper content__potion">
+            <ul class="potion__list"></ul>
+            <div class="selected__potion">
+              <img class="selected__potion-image" src="" alt="" />
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <img class="footer__logo" src="./img/logo.png" alt="" />
+        <p class="footer__name">
+          <span>Васильева Екатерина</span><br /><span>Б24ДЗ08</span>
+        </p>
+      </footer>
+    </div>
+
+    <template id="button__template">
+      <button class="button-hands">
+        <img class="button-image" src="" alt="" />
+        <img class="Background_Hands" src="" alt="" />
+        <p class="button-hands-text"></p>
+        <p class="button-main-text">
+          <span class="button-main-fpar"></span>
+          <span class="button-main-spar"></span>
+        </p>
+      </button>
+    </template>
+
+    <template id="button__potion">
+      <li class="potion__element">
+        <button class="potion__element-button">
+          <img class="potion__button-image" src="" alt="" />
+        </button>
+      </li>
+    </template>
+
+    <template id="lizard">
+      <li class="lizard__element">
+        <img class="lizard__image" src="" alt="" />
+      </li>
+    </template>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
